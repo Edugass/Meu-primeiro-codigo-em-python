@@ -1,0 +1,16 @@
+Esse codigo tem como função cadastrar frutas em um arquivo json.
+Eu utilizei um loop para adicionar mais de um item, logo quando é adicionado uma fruta no final o codigo ira perguntar se "Voce deseja adicionar uma nova fruta (s/n)"
+se a resposta for qualquer outra que não seja "s" o codigo ira fechar o arquivo e salvar, se for "s" ele iniciara novamente.
+eu usei variaveis editaveis nesse codigo, usei tambem o "append" para salvar as alterações por ultimo da lista assim fazendo que os arquivos não se sobrescrevam.
+para fazer o loop foi simples usei o "while true".
+para que o arquivo fosse aberto editado fechado e salvado usei os seguintes codigos 
+try:
+    with open("frutas.json", "r") as comida:
+       frutas=json.load(comida)
+except FileNotFoundError:
+    frutas= []
+basicamente "whith open" para buscar o arquivo e "r" para abrilo e modo editavel.
+as comida foi o valor que dei a o aquivo 
+"except FileNotFoundError:
+    frutas= []"
+aqui basicamente diz que se o arquivo não for encontrado com [] ele não funcionara.
