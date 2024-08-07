@@ -14,3 +14,5 @@ as comida foi o valor que dei a o aquivo
 "except FileNotFoundError:
     frutas= []"
 aqui basicamente diz que se o arquivo não for encontrado com [] ele não funcionara.
+
+!!para esse codigo rodar é necessario criar um arquivo .json!!
